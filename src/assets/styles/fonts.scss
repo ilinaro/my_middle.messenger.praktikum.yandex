@@ -1,6 +1,18 @@
+.f-big {
+  font-size: 40px;
+  line-height: 40px;
+}
+
 .f-header {
   font-size: 20px;
   line-height: 20px;
+}
+
+.f-title-bold {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .f-title {
@@ -21,7 +33,7 @@
 
 .f-light {
   font-size: 12px;
-  line-height: 15px;
+  line-height: 15px; 
 }
 
 .f-mini {
@@ -29,6 +41,23 @@
   line-height: 13px;
 }
 
+.f-red {
+  color: var(--color-red);
+}
+
+.f-silver {
+  color: var(--color-silver);
+}
+
+.f-link {
+  color: var(--color-blue);
+  text-decoration: underline;
+}
+
+.f-center {
+  display: flex;
+  text-align: center;
+}
 @font-face {
   font-family: "Inter-Regular";
   src: url("../fonts/Inter-Regular.eot");
