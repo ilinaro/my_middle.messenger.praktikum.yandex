@@ -1,0 +1,11 @@
+.button {
+    outline: none;
+    border: none;
+    width: 280px;
+    height: 37px;
+    border-radius: 8px;
+    &_blue {
+        background-color: var(--color-blue);
+        color: var(--color-white);
+    }
+}
