@@ -4,7 +4,7 @@
 
 Компиляция и рендер на клинете - "@anikin/parcel-transformer-handlebars-precompile
 
-##### Запук в develop
+##### Запуcк в develop
 ```
 npm run dev
 ```
