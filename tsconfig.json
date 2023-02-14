@@ -1,0 +1,28 @@
+{
+  "extends": "./tsconfig.paths.json",
+  "compilerOptions": {
+    "checkJs": true,
+    "allowJs": true,                                /* разрешает JS файлы в TS проекте */
+    "allowUnreachableCode": false,                  /* разрешает недостижимый код в TS */
+    "allowUnusedLabels": false,                     /* разрешает неиспользуемые метки в TS для совместимости с JS */
+    "declaration": true,                            /* создает .d.ts файлы для использования в других проектах в TS */
+    "esModuleInterop": true,                        /* упрощает импорт CommonJS модулей в TS */
+    "forceConsistentCasingInFileNames": true,       /* проверяет, что имена файлов в TS соответствуют ожидаемому регистру */
+    "isolatedModules": true,                        /* проверяет файлы в отдельности, уменьшая ошибки из-за взаимодействия модулей в TS*/
+    "moduleResolution": "node",                     /* определяет, как TS разрешает пути к модулям при импорте */
+    "noEmit": true,                                 /* для компиляции кода без отправки скомпилированных файлов JS в файловую систему*/
+    "noFallthroughCasesInSwitch": true,             /* Для предотвращения ошибок при использовании конструкции switch. */
+    "noImplicitReturns": true,                      /* обнаруживать потенциальные ошибки в функциях, где не определены все пути возврата значений */
+    "pretty": true,                                 /* указывает, что при компиляции TS вывод должен быть форматирован для лучшей читаемости */
+    "resolveJsonModule": true,                      /*  позволяет импортировать JSON файлы как модули в TS*/
+    "skipLibCheck": true,                           /* позволяет пропустить проверку типов для файлов библиотек, ускоряя процесс компиляции */
+    "sourceMap": true,                              /* создает отображение между исходным и скомпилированным кодом в TS для отладки */
+    "experimentalDecorators": true,                 /* позволяет использовать экспериментальный синтаксис декораторов для классов и свойств в TS */
+    //"jsxImportSource": "preact",                  /* определяет модуль, который будет импортирован для поддержки JSX элементов в TS */
+    "target": "es2017",                             /* указывает версию ECMAScript, для которой компилируется TS */
+    "strict": true,
+    "module": "commonjs",
+  },
+  "include": ["src/**/*", "*.hbs"],
+  "exclude": ["node_modules", ".cache", "dist"]
+}
