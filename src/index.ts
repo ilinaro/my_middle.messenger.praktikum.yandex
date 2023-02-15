@@ -1,6 +1,8 @@
 import './layouts';
+import './blocks';
 import './components';
 import './components/svg';
+import './assets/styles/global.scss';
 
 import contacts from './mock/contacts.json';
 import editPassword from './pages/edit-password.hbs';
@@ -13,8 +15,7 @@ import login from './pages/login.hbs';
 import modals from './pages/modals.hbs';
 import profile from './pages/profile.hbs';
 import registration from './pages/registration.hbs';
-//style
-import styles from './assets/styles/global.scss';
+// mock
 import user from './mock/user.json';
 
 function render(html: string) {
@@ -46,6 +47,6 @@ window.goToPage = function (name: string) {
 };
 
 window.addEventListener('DOMContentLoaded', () => {
-  const context = { styles, user };
+  const context = { user };
   render(ROUTES.login(context));
 });
