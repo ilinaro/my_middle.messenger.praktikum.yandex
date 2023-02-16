@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "chat",
   "scripts": {
-    "dev": "parcel src/index.html -p 3000  --no-cache",
+    "dev": "parcel src/index.html --no-cache",
     "build": "parcel build src/index.html --no-cache",
-    "check": "tsc --noEmit",
     "start": "npm run build && node server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "check": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
