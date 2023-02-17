@@ -23,6 +23,6 @@
     "strict": true,
     "module": "commonjs",
   },
-  "include": ["src/**/*", "*.hbs"],
+  "include": ["src/**/*", "*.hbs", "*.ts"],
   "exclude": ["node_modules", ".cache", "dist"]
 }
