@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "chat",
   "scripts": {
-    "dev": "parcel src/index.html --no-cache",
+    "dev": "parcel src/index.html -p 3002 --no-cache",
     "build:prod": "parcel build src/index.html --no-cache",
-    "start": "npm run build:prod && ts-node script.ts",
-    "check": "tsc --noEmit"
+    "start": "npm run build:prod && ts-node server.ts",
+    "check": "tsc --noEmit",
+    "eslint": "node_modules/.bin/eslint . --fix "
   },
   "keywords": [],
   "author": "",
@@ -16,9 +17,14 @@
     "@anikin/parcel-transformer-handlebars-precompile": "1.0.1",
     "@parcel/transformer-sass": "2.8.3",
     "@types/express": "4.17.17",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "5.52.0",
+    "eslint": "8.34.0",
+    "eslint-config-airbnb": "19.0.4",
     "parcel": "2.8.3",
     "sass": "1.58.0",
-    "ts-node": "^10.9.1"
+    "stylelint": "^15.1.0",
+    "ts-node": "10.9.1"
   },
   "dependencies": {
     "@babel/preset-typescript": "7.18.6",
