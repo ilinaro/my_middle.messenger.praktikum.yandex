@@ -1,4 +1,20 @@
-import Button from './button.hbs';
-import Handlebars from 'handlebars/dist/handlebars.runtime';
+import Block from '../../../utils/Block'
+import template from './button.hbs'
 
-Handlebars.registerPartial('Button', Button);
+interface ButtonProps {
+  type?: string;
+  label: string;
+  events: {
+    click: () => void;
+  };
+}
+
+export class Button extends Block<ButtonProps> {
+  constructor(props: ButtonProps) {
+    super({ type: 'button', ...props });
+  }
+
+  render() {
+    return this.compile(template, { ...this.props });
+  }
+}

@@ -1,6 +1,6 @@
-import './buttons/button'
+import './buttons/Button'
 import './buttons/button-back'
-import  './fields/input'
+import './fields/input'
 import './fields/input-message'
 import './fields/input-profile'
 import './fields/input-search'

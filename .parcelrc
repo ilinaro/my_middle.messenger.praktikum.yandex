@@ -1,9 +1,18 @@
 {
-  "extends": "@parcel/config-default",
-  "transformers": {
-    "*.hbs": ["@anikin/parcel-transformer-handlebars-precompile"],
-    "types:*.{ts,tsx}": ["@parcel/transformer-typescript-types"],
-    "types:*.{html,htm}": ["@parcel/transformer-typescript-types"],
-    "*.scss": ["@parcel/transformer-sass"]
-  }
- }
+    "extends": "@parcel/config-default",
+    "transformers": {
+        "*.hbs": [
+            "@anikin/parcel-transformer-handlebars-precompile"
+        ],
+        "*.{ts}": ["@parcel/transformer-typescript-tsc"],
+        "types:*.{ts}": [
+            "@parcel/transformer-typescript-types"
+        ],
+        "types:*.{html,htm}": [
+            "@parcel/transformer-typescript-types"
+        ],
+        "*.scss": [
+            "@parcel/transformer-sass"
+        ]
+    }
+}

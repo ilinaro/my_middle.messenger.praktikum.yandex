@@ -1,2 +1,2 @@
-export { ProfileLayout } from './profile-layout'
-export { PrimaryLayout } from './primary-layout'
+import './profile-layout';
+import './primary-layout';
