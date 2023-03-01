@@ -1,7 +1,6 @@
 import { EventBus } from './EventBus'
 import { nanoid } from 'nanoid'
 
-// Нельзя создавать экземпляр данного класса
 class Block<P extends Record<string, any> = any> {
   static EVENTS = {
     INIT: 'init',
@@ -124,10 +123,9 @@ class Block<P extends Record<string, any> = any> {
   get element() {
     return this._element
   }
-  
-  // общий код для всех компонентов
+
   private _render() {
-    const fragment = this.render() // PROTECTED
+    const fragment = this.render()
 
     const newElement = fragment.firstElementChild as HTMLElement
 

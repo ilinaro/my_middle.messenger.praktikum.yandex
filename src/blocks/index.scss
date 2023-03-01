@@ -1,11 +1,10 @@
-@import "./body-profile/body-profile.scss";
+@import "./BodyProfile/body-profile.scss";
 @import "./contact-message/contact-message.scss";
+@import "./EditProfile/edit-profile.scss";
 @import "./contact/contact.scss";
-@import "./edit-password/edit-password.scss";
-@import "./edit-profile/edit-profile.scss";
-@import "./head-bar/head-bar.scss";
+@import "./EditPassword/edit-password.scss";
 @import "./list-contacts/list-contacts.scss";
 @import "./my-message/my-message.scss";
 @import "./read-message/read-message.scss";
-@import "./registration-form/registration-form.scss";
-@import "./write-message/write-message.scss";
+@import "./HeadBar/head-bar.scss";
+@import "./AttachMessage/attach_menu.scss";

@@ -1,10 +1,8 @@
-//pages
 import { EditPasswordPage } from './pages/EditPassword'
 import { EditProfilePage } from './pages/EditProfile'
 import { ErrorServerPage } from './pages/ErrorServer'
 import { LoginPage } from './pages/Login'
 import { MessagePage } from './pages/Message'
-import { ModalsPage } from './pages/Modals'
 import { NotFoundPage } from './pages/NotFound'
 import { ProfilePage } from './pages/Profile'
 import { RegistrationPage } from './pages/Registration'
@@ -21,7 +19,6 @@ interface PagesI {
   notFound: typeof NotFoundPage
   profile: typeof ProfilePage
   message: typeof MessagePage
-  modals: typeof ModalsPage
 }
 
 const ROUTES: PagesI = {
@@ -33,7 +30,6 @@ const ROUTES: PagesI = {
   notFound: NotFoundPage,
   profile: ProfilePage,
   message: MessagePage,
-  modals: ModalsPage,
 }
 
 export function renderDOM(route: keyof typeof ROUTES) {

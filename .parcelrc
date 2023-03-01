@@ -4,15 +4,12 @@
         "*.hbs": [
             "@anikin/parcel-transformer-handlebars-precompile"
         ],
-        "*.{ts}": ["@parcel/transformer-typescript-tsc"],
-        "types:*.{ts}": [
+        "*.{ts}": [
+            "@parcel/transformer-typescript-tsc"
+        ],
+        "types:*.{ts, html, htm}": [
             "@parcel/transformer-typescript-types"
         ],
-        "types:*.{html,htm}": [
-            "@parcel/transformer-typescript-types"
-        ],
-        "*.scss": [
-            "@parcel/transformer-sass"
-        ]
+        "*.scss": ["@parcel/transformer-sass"]
     }
 }

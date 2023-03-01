@@ -1,9 +1,10 @@
-declare module '*.hbs' {
-  import { TemplateDlegate } from 'handlebars'
+declare module "*.hbs" {
+  import { TemplateDelegate } from 'handlebars';
 
-  declare const template: TemplateDlegate
+  declare const template: TemplateDelegate;
 
-  export default template
+  export default template;
 }
+
 declare module 'handlebars-layouts'
 declare module 'handlebars/dist/handlebars.runtime'

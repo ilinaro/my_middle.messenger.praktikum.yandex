@@ -3,9 +3,9 @@
     <div class="page_home">
       <div class="page_home-bar">
         <section class="page_home-bar_top">
-          <div onclick="goToPage('profile')"  class="button_default">Профиль {{> MoreSVG}}</div>
+          {{{buttonProfile}}}
           <div class="page_home-bar_search">
-            {{> InputSearch}}
+            {{{InputSearch}}}
           </div>
         </section>
         <div class="line_x"></div>
@@ -14,9 +14,13 @@
         </section>
       </div>
       <div class="page_home-chat">
-        {{> HeadBar avatar="avatar" display_name="Ананас"}}
+        {{{HeadBar}}}
         {{> ReadMessage}}
-        {{> WriteMessage}}
+          <div class="write-message">
+            {{{AttachMessage}}}
+            {{{InputMessage}}}
+            {{{EnterMessage}}}
+          </div>
       </div>
     </div>
   {{/content}}
