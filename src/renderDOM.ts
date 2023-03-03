@@ -11,8 +11,6 @@ import { MessagePage } from './pages/Message'
 import { NotFoundPage } from './pages/NotFound'
 import { ProfilePage } from './pages/Profile'
 import { RegistrationPage } from './pages/Registration'
-import contacts from './mock/contacts.json'
-import user from './mock/user.json'
 
 interface PagesI {
   login: typeof LoginPage
