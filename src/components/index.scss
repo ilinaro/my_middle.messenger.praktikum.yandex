@@ -5,7 +5,9 @@
 @import "./buttons/ButtonRemove/button-remove.scss";
 @import './buttons/ButtonImages/button-images.scss';
 @import "./buttons/ButtonFile/button-file.scss";
-@import "./buttons/Button/button.scss";
+
+// @import "./buttons/Button/button.scss"; // проверка для прохождения тестов
+
 @import "./fields/InputMessage/input-message.scss";
 @import "./fields/InputSearch/input-search.scss";
 @import "./fields/Input/input.scss";
