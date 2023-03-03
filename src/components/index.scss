@@ -3,10 +3,9 @@
 @import "./buttons/ButtonMenu/button-menu.scss";
 @import "./buttons/ButtonAdd/button-add.scss";
 @import "./buttons/ButtonRemove/button-remove.scss";
-@import './buttons/ButtonImages/button-images.scss';
+@import "./buttons/ButtonImages/button-images.scss";
 @import "./buttons/ButtonFile/button-file.scss";
-
-// @import "./buttons/Button/button.scss"; // проверка для прохождения тестов
+@import "./buttons/Button/button.scss";
 
 @import "./fields/InputMessage/input-message.scss";
 @import "./fields/InputSearch/input-search.scss";
