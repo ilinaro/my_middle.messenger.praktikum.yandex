@@ -1,6 +1,7 @@
-import './assets/styles/global.scss'
 import './layouts'
 import './blocks'
+// mock
+import './assets/styles/global.scss'
 
 import { EditPasswordPage } from './pages/EditPassword'
 import { EditProfilePage } from './pages/EditProfile'
@@ -10,7 +11,6 @@ import { MessagePage } from './pages/Message'
 import { NotFoundPage } from './pages/NotFound'
 import { ProfilePage } from './pages/Profile'
 import { RegistrationPage } from './pages/Registration'
-// mock
 import contacts from './mock/contacts.json'
 import user from './mock/user.json'
 
@@ -39,7 +39,6 @@ const ROUTES: PagesI = {
 export function renderDOM(route: keyof typeof ROUTES) {
   const root = document.querySelector('#app')!
   root.innerHTML = ''
-
   const PageComponent = ROUTES[route]
   const page = new PageComponent()
 
