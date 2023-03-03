@@ -1,3 +1,7 @@
+import './assets/styles/global.scss'
+import './layouts'
+import './blocks'
+
 import { EditPasswordPage } from './pages/EditPassword'
 import { EditProfilePage } from './pages/EditProfile'
 import { ErrorServerPage } from './pages/ErrorServer'
