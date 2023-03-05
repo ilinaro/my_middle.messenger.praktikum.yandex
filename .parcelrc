@@ -9,7 +9,6 @@
         ],
         "types:*.{ts, html, htm}": [
             "@parcel/transformer-typescript-types"
-        ],
-        "*.scss": ["@parcel/transformer-sass"]
+        ]
     }
 }
