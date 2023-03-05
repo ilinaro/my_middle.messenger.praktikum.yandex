@@ -1,6 +1,6 @@
 import Block from '../../utils/Block'
 import CONTACTS from '../../mock/contacts.json'
-import { Contact } from '..'
+import { Contact } from '../'
 import template from './list-contacts.hbs'
 
 interface ListContactsProps {
