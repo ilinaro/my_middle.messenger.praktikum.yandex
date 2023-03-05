@@ -1,6 +1,6 @@
-import './layouts'
-import './blocks'
-import './components';
+import '../src/layouts'
+import '../src/blocks'
+import '../src/components';
 // mock
 import './assets/styles/global.scss'
 
