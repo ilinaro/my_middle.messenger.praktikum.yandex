@@ -8,7 +8,7 @@ interface ButtonAttachProps {
   }
 }
 
-export class ButtonAttach extends Block<ButtonAttachProps> {
+export default class ButtonAttach extends Block<ButtonAttachProps> {
   constructor(props: ButtonAttachProps) {
     super({ type: 'svg', ...props })
   }

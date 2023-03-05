@@ -1,6 +1,6 @@
+import { Button, ModalWindowBack } from '../../'
+
 import Block from '../../../utils/Block'
-import { Button } from '../../buttons/Button'
-import { ModalWindowBack } from '../ModalWindowBack'
 import template from './modal-file-onload.hbs'
 
 interface ModalFileOnloadProps {
@@ -9,7 +9,7 @@ interface ModalFileOnloadProps {
   callbackOnload?: () => void
 }
 
-export class ModalFileOnload extends Block<ModalFileOnloadProps> {
+export default class ModalFileOnload extends Block<ModalFileOnloadProps> {
   constructor(props: ModalFileOnloadProps) {
     super({ type: 'div', ...props })
   }

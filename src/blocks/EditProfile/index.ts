@@ -1,10 +1,11 @@
+import { Button, InputProfile } from '../../components'
+
 import Block from '../../utils/Block'
-import { Button } from '../../components/buttons/Button'
-import { InputProfile } from '../../components/fields/InputProfile'
 import { renderDOM } from '../../renderDOM'
 import template from './edit-profile.hbs'
 import user from '../../mock/user.json'
-export class EditProfile extends Block {
+
+export default class EditProfile extends Block {
   constructor() {
     super({})
   }
@@ -53,11 +54,9 @@ export class EditProfile extends Block {
       value: '+7(123)123-34-56',
     })
 
-
-    
     this.children.ButtonProfile = new Button({
       label: 'Сохранить',
-      className: "button button_blue f-normal",
+      className: 'button button_blue f-normal',
       events: {
         click: () => renderDOM('profile'),
       },

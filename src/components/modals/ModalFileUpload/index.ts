@@ -1,6 +1,6 @@
+import { Button, ModalWindowBack } from '../../'
+
 import Block from '../../../utils/Block'
-import { Button } from '../../buttons/Button'
-import { ModalWindowBack } from '../ModalWindowBack'
 import template from './modal-file-upload.hbs'
 
 interface ModalFileUploadProps {
@@ -9,7 +9,7 @@ interface ModalFileUploadProps {
   callbackUpload?: () => void
 }
 
-export class ModalFileUpload extends Block<ModalFileUploadProps> {
+export default  class ModalFileUpload extends Block<ModalFileUploadProps> {
   constructor(props: ModalFileUploadProps) {
     super({ type: 'div', ...props })
   }

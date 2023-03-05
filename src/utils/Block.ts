@@ -76,6 +76,14 @@ class Block<P extends Record<string, any> = any> {
     eventBus.on(Block.EVENTS.FLOW_RENDER, this._render.bind(this))
   }
 
+
+  _removeEvents() {
+    const {events = {}} = this.props;
+    Object.keys(events).forEach((eventName: string) => { 
+      this._element?.removeEventListener(eventName, events[eventName]);
+    });
+  }
+
   private _init() {
     this.init()
 
@@ -134,7 +142,7 @@ class Block<P extends Record<string, any> = any> {
     }
 
     this._element = newElement
-
+    this._removeEvents();
     this._addEvents()
   }
 

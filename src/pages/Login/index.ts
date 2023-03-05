@@ -1,6 +1,6 @@
+import { Button, Input } from '../../components'
+
 import Block from '../../utils/Block'
-import { Button } from '../../components/buttons/Button'
-import { Input } from '../../components/fields/Input'
 import { renderDOM } from '../../renderDOM'
 import template from './login.hbs'
 

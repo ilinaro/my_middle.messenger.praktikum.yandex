@@ -8,7 +8,7 @@ interface ButtonProps {
   }
 }
 
-export class EnterMessage extends Block<ButtonProps> {
+export default class EnterMessage extends Block<ButtonProps> {
   constructor(props: ButtonProps) {
     super({ type: 'button', ...props })
   }

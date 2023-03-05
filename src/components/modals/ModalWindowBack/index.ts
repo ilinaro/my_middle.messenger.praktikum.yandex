@@ -8,7 +8,7 @@ interface ModalWindowBackProps {
   }
 }
 
-export class ModalWindowBack extends Block<ModalWindowBackProps> {
+export default  class ModalWindowBack extends Block<ModalWindowBackProps> {
   constructor(props: ModalWindowBackProps) {
     super({ type: 'div', ...props })
   }

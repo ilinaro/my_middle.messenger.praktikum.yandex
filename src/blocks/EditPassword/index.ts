@@ -1,10 +1,10 @@
+import { Button, InputProfile } from '../../components'
+
 import Block from '../../utils/Block'
-import { Button } from '../../components/buttons/Button'
-import { InputProfile } from '../../components/fields/InputProfile'
 import { renderDOM } from '../../renderDOM'
 import template from './edit-password.hbs'
 
-export class EditPassword extends Block {
+export default class EditPassword extends Block {
   constructor() {
     super({})
   }

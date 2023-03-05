@@ -6,7 +6,7 @@ interface InputProps {
   type?: string
 }
 
-export class InputSearch extends Block<InputProps> {
+export default class InputSearch extends Block<InputProps> {
   constructor(props: InputProps) {
     super({ type: 'input', ...props })
   }

@@ -1,6 +1,6 @@
+import { Button, ModalWindowBack } from '../../'
+
 import Block from '../../../utils/Block'
-import { Button } from '../../buttons/Button'
-import { ModalWindowBack } from '../ModalWindowBack'
 import template from './modal-file-error.hbs'
 
 interface ModalFileErrorProps {
@@ -10,7 +10,7 @@ interface ModalFileErrorProps {
 }
 
 
-export class ModalFileError extends Block<ModalFileErrorProps> {
+export default class ModalFileError extends Block<ModalFileErrorProps> {
   constructor(props: ModalFileErrorProps) {
     super({ type: 'div', ...props })
   }

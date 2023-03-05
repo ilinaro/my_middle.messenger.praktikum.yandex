@@ -1,6 +1,6 @@
 import Block from '../../utils/Block'
-import { BodyProfile } from '../../blocks/BodyProfile'
-import { ButtonBack } from '../../components/buttons/ButtonBack'
+import { BodyProfile } from '../../blocks'
+import { ButtonBack } from '../../components'
 import { renderDOM } from '../../renderDOM'
 import template from './profile.hbs'
 
@@ -16,7 +16,7 @@ export class ProfilePage extends Block {
       },
     })
 
-    this.children.BodyProfile = new BodyProfile()
+    this.children.BodyProfile = new BodyProfile({})
   }
 
   render() {

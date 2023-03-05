@@ -1,7 +1,6 @@
+import { Button, Input, ModalWindowBack } from '../../'
+
 import Block from '../../../utils/Block'
-import { Button } from '../../buttons/Button'
-import { Input } from '../../fields/Input'
-import { ModalWindowBack } from '../ModalWindowBack'
 import template from './modal-user-add.hbs'
 
 interface ModalUserAddProps {
@@ -10,7 +9,7 @@ interface ModalUserAddProps {
   callbackAdd?: () => void
 }
 
-export class ModalUserAdd extends Block<ModalUserAddProps> {
+export default class ModalUserAdd extends Block<ModalUserAddProps> {
   constructor(props: ModalUserAddProps) {
     super({ type: 'div', ...props })
   }
@@ -46,7 +45,6 @@ export class ModalUserAdd extends Block<ModalUserAddProps> {
     let value = (this.children.Login as Input).setValue('')
     if (this.props.callbackAdd) this.props.callbackAdd()
   }
-
 
   onClose() {
     let value = (this.children.Login as Input).setValue('')

@@ -1,9 +1,12 @@
+import {
+  ButtonAdd,
+  ButtonMenu,
+  ButtonRemove,
+  ModalUserAdd,
+  ModalUserRemove,
+} from '../../components'
+
 import Block from '../../utils/Block'
-import { ButtonAdd } from '../../components/buttons/ButtonAdd'
-import { ButtonMenu } from '../../components/buttons/ButtonMenu'
-import { ButtonRemove } from '../../components/buttons/ButtonRemove'
-import { ModalUserAdd } from '../../components/modals/ModalUserAdd'
-import { ModalUserRemove } from '../../components/modals/ModalUserRemove'
 import template from './head-bar.hbs'
 
 interface HeadBarProps {
@@ -15,7 +18,7 @@ interface HeadBarProps {
   stateModalRemoveUser?: boolean
 }
 
-export class HeadBar extends Block<HeadBarProps> {
+export default class HeadBar extends Block<HeadBarProps> {
   constructor(props: HeadBarProps) {
     super({
       type: 'div',
@@ -31,7 +34,7 @@ export class HeadBar extends Block<HeadBarProps> {
       state: false,
     })
     this.children.ModalUserRemove = new ModalUserRemove({
-      state: false
+      state: false,
     })
     this.children.ButtonMenu = new ButtonMenu({
       events: {

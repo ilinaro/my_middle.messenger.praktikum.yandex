@@ -10,7 +10,7 @@ interface ButtonProps {
   }
 }
 
-export class LinkProfile extends Block<ButtonProps> {
+export default class LinkProfile extends Block<ButtonProps> {
   constructor(props: ButtonProps) {
     super({ type: 'div', ...props })
   }

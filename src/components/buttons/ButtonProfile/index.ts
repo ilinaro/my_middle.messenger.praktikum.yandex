@@ -8,7 +8,7 @@ interface ButtonProps {
   }
 }
 
-export class ButtonProfile extends Block<ButtonProps> {
+export default class ButtonProfile extends Block<ButtonProps> {
   constructor(props: ButtonProps) {
     super({ type: 'div', ...props })
   }

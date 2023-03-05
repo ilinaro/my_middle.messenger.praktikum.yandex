@@ -1,35 +1,42 @@
 import Block from '../../utils/Block'
-import { LinkProfile } from '../../components/buttons/LinkProfile'
+import { LinkProfile } from '../../components'
 import { renderDOM } from '../../renderDOM'
 import template from './body-profile.hbs'
 
-export class BodyProfile extends Block {
-  constructor() {
-    super({})
-  }
+interface BodyProfileProps {
+  type?: string
+  stateOpen?: boolean
+}
 
+export default class BodyProfile extends Block<BodyProfileProps> {
+  constructor(props: BodyProfileProps) {
+    super({
+      type: 'div',
+      ...props,
+    })
+  }
   init() {
     this.children.buttonEditProfile = new LinkProfile({
-      label: "Изменить данные",
-      className: "btn-edit",
+      label: 'Изменить данные',
+      className: 'btn-edit',
       events: {
-        click: () => renderDOM('editProfile')
-      }
-    }) 
+        click: () => renderDOM('editProfile'),
+      },
+    })
     this.children.buttonEditPassword = new LinkProfile({
-      label: "Изменить пароль",
-      className: "btn-edit",
+      label: 'Изменить пароль',
+      className: 'btn-edit',
       events: {
-        click: () => renderDOM('editPassword')
-      }
-    }) 
+        click: () => renderDOM('editPassword'),
+      },
+    })
     this.children.buttonExit = new LinkProfile({
-      label: "Выйти",
-      className: "btn-exit",
+      label: 'Выйти',
+      className: 'btn-exit',
       events: {
-        click: () => renderDOM('login')
-      }
-    })  
+        click: () => renderDOM('login'),
+      },
+    })
   }
 
   render() {

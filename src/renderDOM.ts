@@ -1,5 +1,6 @@
 import './layouts'
 import './blocks'
+import './components';
 // mock
 import './assets/styles/global.scss'
 

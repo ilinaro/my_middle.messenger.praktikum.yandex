@@ -9,7 +9,7 @@ interface InputProps {
   maxLength: string
 }
 
-export class Input extends Block<InputProps> {
+export default class Input extends Block<InputProps> {
   constructor(props: InputProps) {
     super({ type: 'input', ...props })
   }

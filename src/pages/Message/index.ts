@@ -1,10 +1,7 @@
-import { AttachMessage } from '../../blocks/AttachMessage'
+import { AttachMessage, HeadBar, ListContacts, ReadMessage } from '../../blocks'
+import { ButtonProfile, EnterMessage, InputMessage, InputSearch } from '../../components'
+
 import Block from '../../utils/Block'
-import { ButtonProfile } from '../../components/buttons/ButtonProfile'
-import { EnterMessage } from '../../components/buttons/EnterMessage'
-import { HeadBar } from '../../blocks/HeadBar'
-import { InputMessage } from '../../components/fields/InputMessage'
-import { InputSearch } from '../../components/fields/InputSearch'
 import { renderDOM } from '../../renderDOM'
 import template from './message.hbs'
 
@@ -15,6 +12,7 @@ export class MessagePage extends Block {
 
   init() {
     this.children.AttachMessage = new AttachMessage({})
+    this.children.ListContacts = new ListContacts({})
     this.children.buttonProfile = new ButtonProfile({
       events: {
         click: () => renderDOM('profile'),
@@ -31,6 +29,8 @@ export class MessagePage extends Block {
     this.children.InputMessage = new InputMessage({
       id: 'message',
     })
+
+    this.children.ReadMessage = new ReadMessage({})
 
     this.children.EnterMessage = new EnterMessage({
       events: {

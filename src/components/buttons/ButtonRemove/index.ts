@@ -9,7 +9,7 @@ interface ButtonProps {
   }
 }
 
-export class ButtonRemove extends Block<ButtonProps> {
+export default class ButtonRemove extends Block<ButtonProps> {
   constructor(props: ButtonProps) {
     super({ type: 'button', ...props })
   }

@@ -6,7 +6,7 @@ interface InputProps {
   type?: string
 }
 
-export class InputMessage extends Block<InputProps> {
+export default  class InputMessage extends Block<InputProps> {
   constructor(props: InputProps) {
     super({ type: 'input', ...props })
   }

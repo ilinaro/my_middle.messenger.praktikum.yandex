@@ -1,8 +1,11 @@
+import {
+  ButtonAttach,
+  ButtonFile,
+  ButtonImages,
+  ButtonLocations,
+} from '../../components'
+
 import Block from '../../utils/Block'
-import { ButtonAttach } from '../../components/buttons/ButtonAttach'
-import { ButtonFile } from '../../components/buttons/ButtonFile'
-import { ButtonImages } from '../../components/buttons/ButtonImages'
-import { ButtonLocations } from '../../components/buttons/ButtonLocations'
 import template from './attach-message.hbs'
 
 interface AttachMessageProps {
@@ -10,7 +13,7 @@ interface AttachMessageProps {
   stateOpen?: boolean
 }
 
-export class AttachMessage extends Block<AttachMessageProps> {
+export default class AttachMessage extends Block<AttachMessageProps> {
   constructor(props: AttachMessageProps) {
     super({
       type: 'div',

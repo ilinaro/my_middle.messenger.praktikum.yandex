@@ -1,7 +1,6 @@
+import { Button, Input, ModalWindowBack } from '../../../components'
+
 import Block from '../../../utils/Block'
-import { Button } from '../../buttons/Button'
-import { Input } from '../../fields/Input'
-import { ModalWindowBack } from '../ModalWindowBack'
 import template from './modal-user-remove.hbs'
 
 interface ModalUserRemoveProps {
@@ -10,7 +9,7 @@ interface ModalUserRemoveProps {
   callbackRemove?: () => void
 }
 
-export class ModalUserRemove extends Block<ModalUserRemoveProps> {
+export default class ModalUserRemove extends Block<ModalUserRemoveProps> {
   constructor(props: ModalUserRemoveProps) {
     super({ type: 'div', ...props })
   }
@@ -41,7 +40,6 @@ export class ModalUserRemove extends Block<ModalUserRemoveProps> {
       },
     })
   }
-
 
   onCancel() {
     let value = (this.children.Login as Input).setValue('')

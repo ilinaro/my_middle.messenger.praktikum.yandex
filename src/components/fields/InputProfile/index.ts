@@ -9,7 +9,7 @@ interface InputProps {
   value?: string
 }
 
-export class InputProfile extends Block<InputProps> {
+export default class InputProfile extends Block<InputProps> {
   constructor(props: InputProps) {
     super({ type: 'input', ...props })
   }
