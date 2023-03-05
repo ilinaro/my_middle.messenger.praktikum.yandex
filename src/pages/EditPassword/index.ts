@@ -1,6 +1,6 @@
 import Block from '../../utils/Block'
-import { ButtonBack } from '../../components'
-import { EditPassword } from '../../blocks'
+import { ButtonBack } from '../../ui'
+import { EditPassword } from '../../common'
 import { renderDOM } from '../../renderDOM'
 import template from './edit-password.hbs'
 

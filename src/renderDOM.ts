@@ -1,6 +1,6 @@
 import '../src/layouts'
-import '../src/blocks'
-import '../src/components';
+import '../src/common'
+import './ui';
 // mock
 import './assets/styles/global.scss'
 

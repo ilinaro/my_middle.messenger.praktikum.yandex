@@ -1,6 +1,6 @@
 import Block from '../../utils/Block'
-import { BodyProfile } from '../../blocks'
-import { ButtonBack } from '../../components'
+import { BodyProfile } from '../../common'
+import { ButtonBack } from '../../ui'
 import { renderDOM } from '../../renderDOM'
 import template from './profile.hbs'
 

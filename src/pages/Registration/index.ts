@@ -1,4 +1,4 @@
-import { Button, Input } from '../../components'
+import { Button, Input } from '../../ui'
 
 import Block from '../../utils/Block'
 import { renderDOM } from '../../renderDOM'

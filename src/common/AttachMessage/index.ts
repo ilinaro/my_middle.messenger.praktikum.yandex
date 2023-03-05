@@ -3,7 +3,7 @@ import {
   ButtonFile,
   ButtonImages,
   ButtonLocations,
-} from '../../components'
+} from '../../ui'
 
 import Block from '../../utils/Block'
 import template from './attach-message.hbs'

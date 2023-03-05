@@ -1,4 +1,4 @@
-import { ContactMessage, MyMessage } from '../../blocks'
+import { ContactMessage, MyMessage } from '../../common'
 
 import Block from '../../utils/Block'
 import template from './read-message.hbs'

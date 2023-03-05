@@ -1,16 +1,16 @@
-import { Button, Input, ModalWindowBack } from '../../'
+import { Button, Input, ModalWindowBack } from '../..'
 
 import Block from '../../../utils/Block'
-import template from './modal-user-add.hbs'
+import template from './modal-user-remove.hbs'
 
-interface ModalUserAddProps {
+interface ModalUserRemoveProps {
   type?: string
   state: boolean
-  callbackAdd?: () => void
+  callbackRemove?: () => void
 }
 
-export default class ModalUserAdd extends Block<ModalUserAddProps> {
-  constructor(props: ModalUserAddProps) {
+export default class ModalUserRemove extends Block<ModalUserRemoveProps> {
+  constructor(props: ModalUserRemoveProps) {
     super({ type: 'div', ...props })
   }
 
@@ -30,7 +30,7 @@ export default class ModalUserAdd extends Block<ModalUserAddProps> {
       placeholder: 'Логин',
     })
     this.children.Button = new Button({
-      label: 'Добавить',
+      label: 'Удалить',
       className: 'button button_blue f-normal',
       type: 'submit',
       events: {
@@ -43,12 +43,12 @@ export default class ModalUserAdd extends Block<ModalUserAddProps> {
 
   onCancel() {
     let value = (this.children.Login as Input).setValue('')
-    if (this.props.callbackAdd) this.props.callbackAdd()
+    if (this.props.callbackRemove) this.props.callbackRemove()
   }
 
   onClose() {
     let value = (this.children.Login as Input).setValue('')
-    if (this.props.callbackAdd) this.props.callbackAdd()
+    if (this.props.callbackRemove) this.props.callbackRemove()
   }
 
   render() {

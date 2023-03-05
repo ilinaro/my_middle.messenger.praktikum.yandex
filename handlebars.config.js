@@ -1,6 +1,6 @@
 module.exports = {
   assets: 'assets',
-  components: 'components*',
-  blocks: 'blocks',
+  ui: 'ui',
+  common: 'common',
   layouts: 'layouts',
 };

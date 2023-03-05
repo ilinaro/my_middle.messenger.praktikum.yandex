@@ -1,5 +1,5 @@
 import Block from '../../utils/Block'
-import { Button } from '../../components'
+import { Button } from '../../ui'
 import { renderDOM } from '../../renderDOM'
 import template from './404.hbs'
 

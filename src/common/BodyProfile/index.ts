@@ -1,5 +1,5 @@
 import Block from '../../utils/Block'
-import { LinkProfile } from '../../components'
+import { LinkProfile } from '../../ui'
 import { renderDOM } from '../../renderDOM'
 import template from './body-profile.hbs'
 

@@ -4,7 +4,7 @@ import {
   ButtonRemove,
   ModalUserAdd,
   ModalUserRemove,
-} from '../../components'
+} from '../../ui'
 
 import Block from '../../utils/Block'
 import template from './head-bar.hbs'

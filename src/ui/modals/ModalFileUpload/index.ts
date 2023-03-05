@@ -1,4 +1,4 @@
-import { Button, ModalWindowBack } from '../../'
+import { Button, ModalWindowBack } from '../..'
 
 import Block from '../../../utils/Block'
 import template from './modal-file-upload.hbs'
