@@ -3,6 +3,10 @@
     "transformers": {
         "*.hbs": [
             "@anikin/parcel-transformer-handlebars-precompile"
-        ]
+        ],
+        "*.{ts}": [
+            "@parcel/transformer-typescript-tsc"
+        ],
+        "*.{sass,scss}": ["@parcel/transformer-sass"]
     }
 }
