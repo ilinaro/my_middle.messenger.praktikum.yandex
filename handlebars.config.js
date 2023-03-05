@@ -1,6 +1,6 @@
-exports = {
+module.exports = {
   assets: 'src/assets',
-  components: 'src/components',
+  components: 'src/components*',
   blocks: 'src/blocks',
   layouts: 'src/layouts',
 };
