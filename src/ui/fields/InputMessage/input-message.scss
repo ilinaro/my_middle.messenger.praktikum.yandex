@@ -9,12 +9,11 @@
     box-sizing: border-box;
     padding: 0 20px;
     background-color: var(--color-avatar);
-    border: none;
     border-radius: 50px;
     border: 1px solid var(--color-avatar);
     transition: 0.2s background-color;
     cursor: pointer;
-    &:focus {
+    :focus {
         border: 1px solid var(--color-blue);
         background-color: var(--color-white);
         cursor: text;
