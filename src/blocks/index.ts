@@ -1,6 +1,6 @@
 import AttachMessage from './AttachMessage'
 import BodyProfile from './BodyProfile'
-import Contact from './Contact'
+import Contact from './Contact/index'
 import ContactMessage from './ContactMessage'
 import EditPassword from './EditPassword'
 import EditProfile from './EditProfile'
