@@ -7,6 +7,18 @@
         "*.{ts}": [
             "@parcel/transformer-typescript-tsc"
         ],
-        "*.{sass,scss}": ["@parcel/transformer-sass"]
+        "*.{sass,scss}": [
+            "@parcel/transformer-sass"
+        ]
+    },
+    "alias": {
+        "@components": "./src/components",
+        "@assets": "./src/assets",
+        "@blocks": "./src/blocks",
+        "@layouts": "./src/layouts",
+        "@mock": "./src/mock",
+        "@pages": "./src/pages",
+        "@types": "./src/types",
+        "@utils": "./src/utils"
     }
 }
