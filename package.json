@@ -4,7 +4,7 @@
   "description": "chat",
   "scripts": {
     "dev": "parcel src/index.html -p 3002 --no-cache",
-    "build:prod": "parcel build src/index.html --no-cache --log-level verbose",
+    "build:prod": "parcel build src/index.html --log-level verbose",
     "start": "npm run build:prod && ts-node server.ts",
     "check": "tsc --noEmit",
     "eslint": "node_modules/.bin/eslint . --fix "
