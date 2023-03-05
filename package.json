@@ -28,6 +28,7 @@
     "handlebars": "4.7.7",
     "handlebars-layouts": "3.1.4",
     "nanoid": "3",
+    "stylelint": "15.1.0",
     "stylelint-config-recommended": "10.0.1"
   },
   "dependencies": {
