@@ -1,3 +1,10 @@
-/node_modules
-.parcel-cache
+/.cache
+/.parcel-cache
+/.idea
+/.vscode
 /dist
+/node_modules
+
+.DS_Store
+
+package-lock.json
