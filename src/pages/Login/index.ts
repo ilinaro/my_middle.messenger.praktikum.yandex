@@ -1,4 +1,4 @@
-import { Button, Input } from '../../ui'
+import { Button, InputLabel } from '../../ui'
 
 import Block from '../../utils/Block'
 import { renderDOM } from '../../renderDOM'
@@ -14,19 +14,29 @@ export class LoginPage extends Block {
   }
 
   init() {
-    this.children.Login = new Input({
+    this.children.Login = new InputLabel({
       id: 'login',
       name: 'login',
       type: 'text',
-      maxLength: '50',
+      maxLength: '40',
       placeholder: 'Логин',
+      label: 'Логин',
+      onBlur: (e: FocusEvent) => {
+        const element: string = (e.target as HTMLInputElement).value
+        console.log(element)
+      },
     })
-    this.children.Password = new Input({
+    this.children.Password = new InputLabel({
       id: 'password',
       name: 'password',
       type: 'password',
-      maxLength: '50',
+      maxLength: '40',
       placeholder: 'Пароль',
+      label: 'Пароль',
+      onBlur: (e: FocusEvent) => {
+        const element: string = (e.target as HTMLInputElement).value
+        console.log(element)
+      },
     })
     this.children.ButtonLogin = new Button({
       className: 'button button_blue f-normal',
@@ -60,20 +70,20 @@ export class LoginPage extends Block {
       },
     })
   }
-
   onSubmit() {
-    const values = Object.values(this.children)
-      .filter((child) => child instanceof Input)
-      .map((child) => [(child as Input).getName(), (child as Input).getValue()])
-    const data = Object.fromEntries(values)
-    console.log(data)
-    renderDOM('message')
+    const login = this.children.Login as InputLabel
+    const password = this.children.Password as InputLabel
+    const data = {
+      login: login.getValue(),
+      password: password.getValue(),
+    }
+    if(!!data.login && !!data.password) {
+      renderDOM('message')
+    }
   }
-
   onRegistration() {
     renderDOM('registration')
   }
-
   render() {
     return this.compile(template, { ...this.props })
   }

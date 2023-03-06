@@ -1,7 +1,6 @@
 import '../src/layouts'
 import '../src/common'
 import './ui';
-// mock
 import './assets/styles/global.scss'
 
 import { EditPasswordPage } from './pages/EditPassword'

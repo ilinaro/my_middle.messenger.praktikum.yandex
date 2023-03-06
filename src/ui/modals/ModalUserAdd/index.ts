@@ -1,4 +1,4 @@
-import { Button, Input, ModalWindowBack } from '../..'
+import { Button, InputLabel, ModalWindowBack } from '../..'
 
 import Block from '../../../utils/Block'
 import template from './modal-user-add.hbs'
@@ -22,12 +22,13 @@ export default class ModalUserAdd extends Block<ModalUserAddProps> {
         },
       },
     })
-    this.children.Login = new Input({
+    this.children.Login = new InputLabel({
       id: 'login',
       name: 'login',
       type: 'text',
-      maxLength: '50',
+      maxLength: '40',
       placeholder: 'Логин',
+      label: 'Логин',
     })
     this.children.Button = new Button({
       label: 'Добавить',
@@ -41,14 +42,23 @@ export default class ModalUserAdd extends Block<ModalUserAddProps> {
     })
   }
 
+  onClearInput() {
+    let valueClear = (this.children.Login as InputLabel).setValue('')
+    return valueClear
+  }
+
   onCancel() {
-    let value = (this.children.Login as Input).setValue('')
-    if (this.props.callbackAdd) this.props.callbackAdd()
+    if (this.props.callbackAdd) {
+      this.onClearInput()
+      this.props.callbackAdd()
+    }
   }
 
   onClose() {
-    let value = (this.children.Login as Input).setValue('')
-    if (this.props.callbackAdd) this.props.callbackAdd()
+    if (this.props.callbackAdd) {
+      this.onClearInput()
+      this.props.callbackAdd()
+    }
   }
 
   render() {

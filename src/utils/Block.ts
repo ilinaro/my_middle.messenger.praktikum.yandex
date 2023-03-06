@@ -2,6 +2,9 @@ import { EventBus } from './EventBus'
 import { nanoid } from 'nanoid'
 
 class Block<P extends Record<string, any> = any> {
+  getValue() {
+    throw new Error("Method not implemented.")
+  }
   static EVENTS = {
     INIT: 'init',
     FLOW_CDM: 'flow:component-did-mount',
@@ -114,6 +117,10 @@ class Block<P extends Record<string, any> = any> {
     if (this.componentDidUpdate(oldProps, newProps)) {
       this.eventBus().emit(Block.EVENTS.FLOW_RENDER)
     }
+  }
+
+  getProps() {
+    return this.props;
   }
 
   protected componentDidUpdate(oldProps: P, newProps: P) {

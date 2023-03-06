@@ -10,6 +10,7 @@ import ButtonProfile from './buttons/ButtonProfile'
 import ButtonRemove from './buttons/ButtonRemove'
 import EnterMessage from './buttons/EnterMessage'
 import Input from './fields/Input'
+import InputLabel from './fields/InputLabel'
 import InputMessage from './fields/InputMessage'
 import InputProfile from './fields/InputProfile'
 import InputSearch from './fields/InputSearch'
@@ -35,6 +36,7 @@ export {
   EnterMessage,
   LinkProfile,
   Input,
+  InputLabel,
   InputMessage,
   InputProfile,
   InputSearch,

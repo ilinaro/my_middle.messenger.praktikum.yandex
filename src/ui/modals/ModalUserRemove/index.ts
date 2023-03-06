@@ -1,4 +1,4 @@
-import { Button, Input, ModalWindowBack } from '../..'
+import { Button, InputLabel, ModalWindowBack } from '../..'
 
 import Block from '../../../utils/Block'
 import template from './modal-user-remove.hbs'
@@ -22,12 +22,13 @@ export default class ModalUserRemove extends Block<ModalUserRemoveProps> {
         },
       },
     })
-    this.children.Login = new Input({
+    this.children.Login = new InputLabel({
       id: 'login',
       name: 'login',
       type: 'text',
-      maxLength: '50',
+      maxLength: '40',
       placeholder: 'Логин',
+      label: 'Логин',
     })
     this.children.Button = new Button({
       label: 'Удалить',
@@ -41,14 +42,23 @@ export default class ModalUserRemove extends Block<ModalUserRemoveProps> {
     })
   }
 
+  onClearInput() {
+    let valueClear = (this.children.Login as InputLabel).setValue('')
+    return valueClear
+  }
+
   onCancel() {
-    let value = (this.children.Login as Input).setValue('')
-    if (this.props.callbackRemove) this.props.callbackRemove()
+    if (this.props.callbackRemove) {
+      this.props.callbackRemove()
+      this.onClearInput()
+    }
   }
 
   onClose() {
-    let value = (this.children.Login as Input).setValue('')
-    if (this.props.callbackRemove) this.props.callbackRemove()
+    if (this.props.callbackRemove) {
+      this.props.callbackRemove()
+      this.onClearInput()
+    }
   }
 
   render() {

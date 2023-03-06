@@ -14,15 +14,15 @@ export default class InputProfile extends Block<InputProps> {
     super({ type: 'input', ...props })
   }
 
-  public setValue(value: string) {
+  setValue(value: string) {
     return ((this.element as HTMLInputElement).value = value)
   }
 
-  public getName() {
+  getName() {
     return (this.element as HTMLInputElement).name
   }
 
-  public getValue() {
+  getValue() {
     return (this.element as HTMLInputElement).value
   }
 
