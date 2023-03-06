@@ -112,12 +112,58 @@ export default class EditProfile extends Block {
       label: 'Сохранить',
       className: 'button button_blue f-normal',
       events: {
-        click: () => renderDOM('profile'),
+        click: () => this.onSubmit(),
       },
     })
   }
 
+  onSubmit() {
+    const email = this.children.editEmail as InputProfile
+    const login = this.children.editLogin as InputProfile
+    const firstName = this.children.editFirstName as InputProfile
+    const secondName = this.children.editLastName as InputProfile
+    const displayName = this.children.editDisplayName as InputProfile
+    const phone = this.children.editPhone as InputProfile
+
+    let isError: boolean = false
+    
+    const data: { [key: string]: string } = {
+      email: email.getValue(),
+      login: login.getValue(),
+      firstName: firstName.getValue(),
+      secondName: secondName.getValue(),
+      displayName: displayName.getValue(),
+      phone: phone.getValue(),
+    }
+
+    if (СontrolEmail.check(data.email, email)) {
+      isError = true
+    }
+    if (СontrolLogin.check(data.login, login)) {
+      isError = true
+    }
+    if (СontrolName.check(data.firstName, firstName)) {
+      isError = true
+    }
+    if (СontrolName.check(data.secondName, secondName)) {
+      isError = true
+    }
+    if (СontrolName.check(data.displayName, displayName)) {
+      isError = true
+    }
+    if (СontrolPhone.check(data.phone, phone)) {
+      isError = true
+    }
+
+    console.log(isError)
+    if (isError) {
+      return
+    }
+    
+    renderDOM('profile')
+  }
+
   render() {
-    return this.compile(template, this.props)
+    return this.compile(template, {...this.props})
   }
 }
