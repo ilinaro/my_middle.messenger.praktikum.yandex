@@ -25,6 +25,7 @@ export class RegistrationPage extends Block {
       maxLength: '40',
       placeholder: 'Почта',
       label: 'Почта',
+      className: "text-field__input",
       onBlur: (e: FocusEvent) => {
         СontrolEmail.check(
           (e.target as HTMLInputElement).value,
@@ -39,6 +40,7 @@ export class RegistrationPage extends Block {
       maxLength: '40',
       placeholder: 'Логин',
       label: 'Логин',
+      className: "text-field__input",
       onBlur: (e: FocusEvent) => {
         СontrolLogin.check(
           (e.target as HTMLInputElement).value,
@@ -47,12 +49,13 @@ export class RegistrationPage extends Block {
       },
     })
     this.children.InputFirstName = new InputLabel({
-      id: 'firstName',
-      name: 'firstName',
+      id: 'first_name',
+      name: 'first_name',
       type: 'text',
       maxLength: '40',
       placeholder: 'Имя',
       label: 'Имя',
+      className: "text-field__input",
       onBlur: (e: FocusEvent) => {
         СontrolName.check(
           (e.target as HTMLInputElement).value,
@@ -61,12 +64,13 @@ export class RegistrationPage extends Block {
       },
     })
     this.children.InputSecondName = new InputLabel({
-      id: 'secondName',
-      name: 'secondName',
+      id: 'second_name',
+      name: 'second_name',
       type: 'text',
       maxLength: '40',
       placeholder: 'Фамилия',
       label: 'Фамилия',
+      className: "text-field__input",
       onBlur: (e: FocusEvent) => {
         СontrolName.check(
           (e.target as HTMLInputElement).value,
@@ -81,6 +85,7 @@ export class RegistrationPage extends Block {
       maxLength: '40',
       placeholder: 'Телефон',
       label: 'Телефон',
+      className: "text-field__input",
       onBlur: (e: FocusEvent) => {
         СontrolPhone.check(
           (e.target as HTMLInputElement).value,
@@ -89,12 +94,13 @@ export class RegistrationPage extends Block {
       },
     })
     this.children.NewPassword = new InputLabel({
-      id: 'newPassword',
-      name: 'newPassword',
+      id: 'password',
+      name: 'password',
       type: 'password',
       maxLength: '40',
       placeholder: 'Пароль',
       label: 'Пароль',
+      className: "text-field__input",
       onBlur: (e: FocusEvent) => {
         СontrolPassword.check(
           (e.target as HTMLInputElement).value,
@@ -103,12 +109,13 @@ export class RegistrationPage extends Block {
       },
     })
     this.children.NewPasswordTwo = new InputLabel({
-      id: 'newPasswordTwo',
-      name: 'newPasswordTwo',
+      id: 'passwordTwo',
+      name: 'passwordTwo',
       type: 'password',
       maxLength: '40',
       placeholder: 'Пароль (еще раз)',
       label: 'Пароль (еще раз)',
+      className: "text-field__input",
       onBlur: (e: FocusEvent) => {
         СontrolTwoPassword.check(
           (e.target as HTMLInputElement).value,
@@ -143,7 +150,7 @@ export class RegistrationPage extends Block {
     const password = this.children.NewPassword as InputLabel
     const passwordTwo = this.children.NewPasswordTwo as InputLabel
 
-    let isError: boolean= false
+    let isError: boolean = false
 
     const data: { [key: string]: string } = {
       email: email.getValue(),
@@ -174,11 +181,7 @@ export class RegistrationPage extends Block {
       isError = true
     }
     if (
-      СontrolTwoPassword.check(
-        data.password,
-        data.passwordTwo,
-        passwordTwo,
-      )
+      СontrolTwoPassword.check(data.password, data.passwordTwo, passwordTwo)
     ) {
       isError = true
     }

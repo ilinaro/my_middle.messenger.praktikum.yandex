@@ -21,6 +21,7 @@ export class LoginPage extends Block {
       maxLength: '40',
       placeholder: 'Логин',
       label: 'Логин',
+      className: "text-field__input",
       onBlur: (e: FocusEvent) => {
         const element: string = (e.target as HTMLInputElement).value
         console.log(element)
@@ -33,6 +34,7 @@ export class LoginPage extends Block {
       maxLength: '40',
       placeholder: 'Пароль',
       label: 'Пароль',
+      className: "text-field__input",
       onBlur: (e: FocusEvent) => {
         const element: string = (e.target as HTMLInputElement).value
         console.log(element)
@@ -77,7 +79,7 @@ export class LoginPage extends Block {
       login: login.getValue(),
       password: password.getValue(),
     }
-    if(!!data.login && !!data.password) {
+    if (!!data.login && !!data.password) {
       renderDOM('message')
     }
   }

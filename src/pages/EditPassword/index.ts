@@ -17,7 +17,7 @@ export class EditPasswordPage extends Block {
     })
     this.children.EditPassword = new EditPassword()
   }
-  
+
   render() {
     return this.compile(template, this.props)
   }

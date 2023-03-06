@@ -15,22 +15,28 @@ export default class EditPassword extends Block {
       id: 'oldPassword',
       name: 'phone',
       placeholder: '•••••••••••',
+      maxLength: '40',
+      className: 'input_profile',
     })
     this.children.newPassword = new InputProfile({
       type: 'password',
       id: 'newPassword',
-      name: 'newPassword',
+      name: 'password',
+      maxLength: '40',
+      className: 'input_profile',
       placeholder: '•••••••••••',
     })
     this.children.newPasswordTwo = new InputProfile({
       type: 'password',
       id: 'newPasswordTwo',
       name: 'newPasswordTwo',
+      className: 'input_profile',
+      maxLength: '40',
       placeholder: '•••••••••••',
     })
     this.children.buttonSave = new Button({
       label: 'Сохранить',
-      className: "button button_blue f-normal",
+      className: 'button button_blue f-normal',
       events: {
         click: () => renderDOM('profile'),
       },

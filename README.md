@@ -17,7 +17,7 @@ http://localhost:3000
 npm run build
 ```
 
-[Deploy](https://deploy--comforting-tartufo-7c50a9.netlify.app/)
+[Deploy](https://deploy--dashing-chimera-391a49.netlify.app/)
 
 
 Компиляция и рендер на клиенте

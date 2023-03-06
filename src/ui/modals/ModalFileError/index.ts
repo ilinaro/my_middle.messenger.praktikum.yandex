@@ -9,7 +9,6 @@ interface ModalFileErrorProps {
   callbackFileErr?: () => void
 }
 
-
 export default class ModalFileError extends Block<ModalFileErrorProps> {
   constructor(props: ModalFileErrorProps) {
     super({ type: 'div', ...props })
@@ -38,7 +37,6 @@ export default class ModalFileError extends Block<ModalFileErrorProps> {
   onCancel() {
     if (this.props.callbackFileErr) this.props.callbackFileErr()
   }
-
 
   onClose() {
     if (this.props.callbackFileErr) this.props.callbackFileErr()
