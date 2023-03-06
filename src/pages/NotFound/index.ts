@@ -11,9 +11,9 @@ export class NotFoundPage extends Block {
   init() {
     this.children.buttonBack = new Button({
       label: 'Назад к чатам',
-      className: "button button_blue f-normal btn-white",
+      className: 'button button_blue f-normal btn-white',
       events: {
-        click: () => renderDOM('login')
+        click: () => renderDOM('login'),
       },
     })
   }

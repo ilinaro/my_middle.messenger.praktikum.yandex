@@ -33,7 +33,7 @@
 
 .f-light {
   font-size: 12px;
-  line-height: 15px; 
+  line-height: 15px;
 }
 
 .f-mini {
@@ -63,7 +63,8 @@
   src: url("../../../src/assets/fonts/Inter-Regular.eot");
   src: local("Inter-Regular"), local("Inter-Regular"),
     url("../../../src/assets/fonts/Inter-Regular.eot?#iefix") format("embedded-opentype"),
-    url("../../../src/assets/fonts/Inter-Regular.woff2") format("woff2"), url("../../../src/assets/fonts/Inter-Regular.woff") format("woff"),
+    url("../../../src/assets/fonts/Inter-Regular.woff2") format("woff2"),
+    url("../../../src/assets/fonts/Inter-Regular.woff") format("woff"),
     url("../../../src/assets/fonts/Inter-Regular.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;

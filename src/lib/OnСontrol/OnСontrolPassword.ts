@@ -5,7 +5,7 @@ export default class OnСontrolPassword extends AbsctractValidator {
 
   Message = {
     NotBlank: `Поле должно быть заполнено`,
-    NotCorrect: `Пароль должен содержать хотя бы одна заглавная буква и цифра`,
+    NotCorrect: `Пароль должен иметь цифру и заглавную букву`,
     MinLength: 'Поле должно иметь больше 8 символов',
     MaxLength: 'Поле не должно содержать больше 40 символов',
   }

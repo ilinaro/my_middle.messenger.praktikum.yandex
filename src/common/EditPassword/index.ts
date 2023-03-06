@@ -30,7 +30,7 @@ export default class EditPassword extends Block {
     })
     this.children.buttonSave = new Button({
       label: 'Сохранить',
-      className: "button button_blue f-normal",
+      className: 'button button_blue f-normal',
       events: {
         click: () => renderDOM('profile'),
       },

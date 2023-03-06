@@ -1,5 +1,10 @@
 import { AttachMessage, HeadBar, ListContacts, ReadMessage } from '../../common'
-import { ButtonProfile, EnterMessage, InputMessage, InputSearch } from '../../ui'
+import {
+  ButtonProfile,
+  EnterMessage,
+  InputMessage,
+  InputSearch,
+} from '../../ui'
 
 import Block from '../../utils/Block'
 import { renderDOM } from '../../renderDOM'

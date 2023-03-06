@@ -9,7 +9,7 @@ interface ModalFileUploadProps {
   callbackUpload?: () => void
 }
 
-export default  class ModalFileUpload extends Block<ModalFileUploadProps> {
+export default class ModalFileUpload extends Block<ModalFileUploadProps> {
   constructor(props: ModalFileUploadProps) {
     super({ type: 'div', ...props })
   }
@@ -37,7 +37,6 @@ export default  class ModalFileUpload extends Block<ModalFileUploadProps> {
   onCancel() {
     if (this.props.callbackUpload) this.props.callbackUpload()
   }
-
 
   onClose() {
     if (this.props.callbackUpload) this.props.callbackUpload()

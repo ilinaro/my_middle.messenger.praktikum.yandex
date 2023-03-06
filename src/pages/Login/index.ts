@@ -77,7 +77,7 @@ export class LoginPage extends Block {
       login: login.getValue(),
       password: password.getValue(),
     }
-    if(!!data.login && !!data.password) {
+    if (!!data.login && !!data.password) {
       renderDOM('message')
     }
   }

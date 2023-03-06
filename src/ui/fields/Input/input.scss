@@ -1,4 +1,4 @@
-.error-input input{
+.error-input input {
     color: var(--color-red);
 }
 .error-message {
@@ -7,7 +7,6 @@
     padding-top: 2px;
     font-size: 10px;
 }
-
 
 .text-field__label {
     display: block;
@@ -27,7 +26,7 @@
     -moz-appearance: none;
     appearance: none;
     &:focus {
-        cursor:text;
+        cursor: text;
     }
 }
 
@@ -37,7 +36,6 @@
 
 .text-field_floating-3 {
     position: relative;
-    
 }
 
 .text-field_floating-3 .text-field__input {

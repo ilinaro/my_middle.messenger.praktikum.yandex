@@ -47,8 +47,8 @@ export class RegistrationPage extends Block {
       },
     })
     this.children.InputFirstName = new InputLabel({
-      id: 'firstName',
-      name: 'firstName',
+      id: 'first_name',
+      name: 'first_name',
       type: 'text',
       maxLength: '40',
       placeholder: 'Имя',
@@ -61,8 +61,8 @@ export class RegistrationPage extends Block {
       },
     })
     this.children.InputSecondName = new InputLabel({
-      id: 'secondName',
-      name: 'secondName',
+      id: 'second_name',
+      name: 'second_name',
       type: 'text',
       maxLength: '40',
       placeholder: 'Фамилия',
@@ -89,8 +89,8 @@ export class RegistrationPage extends Block {
       },
     })
     this.children.NewPassword = new InputLabel({
-      id: 'newPassword',
-      name: 'newPassword',
+      id: 'password',
+      name: 'password',
       type: 'password',
       maxLength: '40',
       placeholder: 'Пароль',
@@ -103,8 +103,8 @@ export class RegistrationPage extends Block {
       },
     })
     this.children.NewPasswordTwo = new InputLabel({
-      id: 'newPasswordTwo',
-      name: 'newPasswordTwo',
+      id: 'passwordTwo',
+      name: 'passwordTwo',
       type: 'password',
       maxLength: '40',
       placeholder: 'Пароль (еще раз)',
@@ -143,7 +143,7 @@ export class RegistrationPage extends Block {
     const password = this.children.NewPassword as InputLabel
     const passwordTwo = this.children.NewPasswordTwo as InputLabel
 
-    let isError: boolean= false
+    let isError: boolean = false
 
     const data: { [key: string]: string } = {
       email: email.getValue(),
@@ -174,11 +174,7 @@ export class RegistrationPage extends Block {
       isError = true
     }
     if (
-      СontrolTwoPassword.check(
-        data.password,
-        data.passwordTwo,
-        passwordTwo,
-      )
+      СontrolTwoPassword.check(data.password, data.passwordTwo, passwordTwo)
     ) {
       isError = true
     }
