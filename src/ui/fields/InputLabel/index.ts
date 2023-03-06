@@ -7,6 +7,7 @@ interface InputLabelProps {
   type?: string
   placeholder: string
   id: string
+  className: string
   maxLength: string
   label: string
   error?: string

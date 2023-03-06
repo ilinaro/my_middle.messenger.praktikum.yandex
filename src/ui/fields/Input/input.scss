@@ -1,10 +1,11 @@
 .error-input input {
     color: var(--color-red);
 }
+
 .error-message {
     position: absolute;
     color: var(--color-red);
-    padding-top: 2px;
+    margin-top: 4px;
     font-size: 10px;
 }
 

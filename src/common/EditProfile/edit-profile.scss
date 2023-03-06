@@ -7,6 +7,9 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    &_form {
+        width: 100%;
+    }
     &-photo {
         margin-top: 60px;
         border-radius: 9999px;
@@ -24,5 +27,11 @@
     &-username {
         padding-top: 20px;
         height: 90px;
+    }
+    &-submit {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

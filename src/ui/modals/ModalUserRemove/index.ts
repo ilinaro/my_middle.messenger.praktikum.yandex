@@ -29,6 +29,7 @@ export default class ModalUserRemove extends Block<ModalUserRemoveProps> {
       maxLength: '40',
       placeholder: 'Логин',
       label: 'Логин',
+      className: "text-field__input",
     })
     this.children.Button = new Button({
       label: 'Удалить',
