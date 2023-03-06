@@ -1,5 +1,6 @@
 module.exports = {
-  partials: 'src/components',
-  helpers: 'src/helpers',
-  layouts: 'src/layouts',
-}
+  assets: 'assets',
+  ui: 'ui',
+  common: 'common',
+  layouts: 'layouts',
+};
